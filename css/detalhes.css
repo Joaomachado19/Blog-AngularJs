@@ -1,0 +1,14 @@
+#postagem {
+width: 100%;
+}
+#postagem img {
+    width: 100%;
+}
+footer h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+}
+footer h3 span {
+    color: #E42939;
+}

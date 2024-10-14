@@ -1,0 +1,72 @@
+1
+<!doctype html>
+<html lang="pt-BR" ng-app="blog">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title>Blog de NodeJS</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+        sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+        type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+        type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+        color="#712cf9">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+    <link href="https://getbootstrap.com/docs/4.6/examples/album/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <main role="main" ng-controller="Detalhes">
+        <section class="text-center">
+            <div class="container" id="postagem">
+                <img ng-src="{{ detalhesPostagem.thumbImage }}">
+                <h1 class="display-10">{{ detalhesPostagem.title }}</h1>
+                <p class="lead text-muted">{{detalhesPostagem.description}}</p>
+            </div>
+        </section>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+          <h3>Blog feito com <span>AngularJS
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                <path fill="#bdbdbd" d="M23.933 2L3 9.285 6.308 36.408 23.955 46 41.693 36.278 45 9.156z"></path>
+                <path fill="#b71c1c" d="M42.818 10.527L24 4.135 24 43.695 39.832 35.017z"></path>
+                <path fill="#dd2c00" d="M23.941 4.115L5.181 10.644 8.168 35.143 23.951 43.721 24 43.695 24 4.135z"></path>
+                <path fill="#bdbdbd" d="M24 5.996L24 15.504 32.578 34 36.987 34z"></path>
+                <path fill="#eee" d="M11.013 34L15.422 34 24 15.504 24 5.996z"></path>
+                <path fill="#bdbdbd" d="M24 24H30V28H24z"></path>
+                <path fill="#eee" d="M18 24H24V28H18z"></path>
+              </svg></span></h3>
+        </div>
+      </footer>
+    <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
